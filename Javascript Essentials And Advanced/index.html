@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <form action="">
+        <h1 class="main-heading">restaurant booking</h1>
+        <h3 class="sub-heading">booking slot</h3>
+
+        <label for="booking" class="text-gray">choice of booking <span class="required">*</span></label>
+        <select name="" id="booking" onchange="change()">
+            <option value="">- select -</option>
+            <option value="fullday">full day booking</option>
+            <option value="halfday">half day booking</option>
+            <option value="hourly">hourly booking</option>
+        </select>
+
+        <label for="uname" class="text-gray">username <span class="required">*</span></label>
+        <input type="text" id="uname">
+
+        <label for="phone-no" class="text-gray">mobile number <span class="required">*</span></label>
+        <input type="tel" id="phone-no">
+
+        <label for="email-id" class="text-gray">email <span class="required">*</span></label>
+        <input type="email" id="email-id">
+
+        <label for="person" class="text-gray">no of person <span class="required">*</span></label>
+        <input type="number" id="person">
+
+        <div id="date">
+            <label for="booking-date" class="text-gray">date: <span class="required">*</span></label>
+            <input type="date" id="booking-date">
+        </div>
+
+        <div id="time">
+            <label for="booking-time" class="text-gray">time: <span class="required">*</span></label>
+            <input type="time" id="booking-time">
+        </div>
+
+        <div id="slot">
+            <label class="text-gray">slot: <span class="required">*</span></label>
+            <input type="radio" name="food" value="breakfast" id="breakfast">
+            <label for="breakfast">breakfast</label>
+            <input type="radio" name="food" value="lunch" id="lunch">
+            <label for="lunch">lunch</label>
+            <input type="radio" name="food" value="dinner" id="dinner">
+            <label for="dinner">dinner</label>
+        </div>
+        <div id="button">
+            <input type="submit" id="submit-button">
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
